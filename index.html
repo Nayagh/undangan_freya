@@ -6,14 +6,14 @@
 <meta property="og:site_name" content="Undangan Baptisan Kudus">
 <meta property="og:url" content="https://nayagh.github.io/baptisan-freya/">
 <meta property="og:title" content="🕊️ Undangan Baptisan Kudus Freya Clairine Rantetasak">
-<meta property="og:description" content="Dengan penuh kasih kami mengundang Bapak/Ibu/Sdr(i) hadir dalam ibadah syukur. Minggu, 15 November 2026, jam 12.00 WIT. Ketuk untuk membuka undangan.">
+<meta property="og:description" content="Dengan penuh kasih kami mengundang Bapak/Ibu/Saudara/i hadir dalam ibadah syukur. Minggu, 15 November 2026, jam 12.00 WIT. Ketuk untuk membuka undangan.">
 <meta property="og:image" content="https://nayagh.github.io/baptisan-freya/sampul.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Undangan Baptisan Kudus Freya Clairine Rantetasak">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="description" content="Dengan penuh kasih kami mengundang Bapak/Ibu/Sdr(i) hadir dalam ibadah syukur Baptisan Kudus Freya Clairine Rantetasak. Minggu, 15 November 2026, jam 12.00 WIT.">
+<meta name="description" content="Dengan penuh kasih kami mengundang Bapak/Ibu/Saudara/i hadir dalam ibadah syukur Baptisan Kudus Freya Clairine Rantetasak. Minggu, 15 November 2026, jam 12.00 WIT.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Undangan Baptisan Kudus Freya</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -114,7 +114,8 @@ h1{
 .greeting{text-align:center;padding-top:34px}
 .shalom{margin:0 0 14px;font-family:var(--script);font-size:38px;line-height:1.15;color:var(--gold);text-wrap:balance}
 .greeting p.text{margin:0 auto;max-width:34em}
-.name-inline{color:var(--water-deep);font-weight:700}
+.name-inline{color:var(--water-deep);font-weight:700;font-size:1.15em;letter-spacing:.01em}
+.event-name{font-weight:700}
 
 .details{padding-top:8px}
 .rows{
@@ -147,7 +148,8 @@ h1{
 .count .done{margin:0;font-family:var(--display);font-size:22px;color:var(--water-deep)}
 
 .closing{text-align:center;padding-top:8px}
-.closing .text{margin:0 auto 26px;max-width:34em}
+.closing .text{margin:0 auto 10px;max-width:34em}
+.closing .blessing{margin:0 0 26px;font-family:var(--script);font-size:32px;line-height:1.2;color:var(--gold)}
 .rule{width:120px;height:1px;background:var(--gold);margin:0 auto 22px;opacity:.7}
 .closing .regards{margin:0;color:var(--muted);font-size:14px}
 .closing .family{margin:6px 0 0;font-family:var(--display);font-weight:600;font-size:25px;line-height:1.25;color:var(--water-deep);text-wrap:balance}
@@ -208,7 +210,7 @@ h1{
     <p class="child">Freya Clairine Rantetasak</p>
 
     <div class="to">
-      <p class="lead">Kepada Yth. Bapak/Ibu/Sdr(i)</p>
+      <p class="lead">Kepada Yth. Bapak/Ibu/Saudara/i</p>
       <p class="guest" id="guest">Tamu Undangan</p>
       <p class="place">di – Jayapura</p>
     </div>
@@ -222,8 +224,8 @@ h1{
 
   <main id="isi">
     <section class="greeting">
-      <p class="shalom">Shalom dan salam sejahtera.</p>
-      <p class="text">Dalam rangka pelaksanaan sakramen Baptisan Kudus anak kekasih kami <span class="name-inline">Freya Clairine Rantetasak</span> di GKI Pniel Kotaraja, maka dengan penuh kasih kami mengundang Bapak/Ibu/Sdr(i) untuk hadir pada acara ibadah syukur yang dilaksanakan pada:</p>
+      <p class="shalom">Salam sejahtera dalam kasih Tuhan Yesus Kristus</p>
+      <p class="text">Dengan penuh syukur dan sukacita atas anugerah yang Tuhan berikan, kami mengundang Bapak/Ibu/Saudara/i untuk berkenan hadir pada acara <span class="event-name">Ibadah Syukur Baptisan Kudus</span> anak kami <span class="name-inline">Freya Clairine Rantetasak</span>, yang dilaksanakan pada:</p>
     </section>
 
     <section class="details">
@@ -264,7 +266,8 @@ h1{
     </section>
 
     <section class="closing">
-      <p class="text">Demikian undangan kami, atas kehadiran dan dukungan doa Bapak/Ibu/Sdr(i) disampaikan terima kasih.</p>
+      <p class="text">Atas kehadiran Bapak/Ibu/Saudara/i disampaikan terima kasih.</p>
+      <p class="blessing">Tuhan Yesus memberkati</p>
       <div class="rule"></div>
       <p class="regards">Salam hormat,</p>
       <p class="family">Kel. Axel Pratama Rantetasak Jr, S.Kom.</p>
@@ -335,10 +338,11 @@ h1{
     return location.origin + location.pathname + "?to=" + enc;
   }
   function buildMessage(name, link){
-    return "Shalom, Bapak/Ibu/Sdr(i) *" + name + "*.\n" +
-      "Dengan penuh sukacita kami mengundang untuk hadir dalam ibadah syukur Baptisan Kudus anak kami, *Freya Clairine Rantetasak*.\n\n" +
+    return "Salam sejahtera dalam kasih Tuhan Yesus Kristus.\n\n" +
+      "Kepada Yth. Bapak/Ibu/Saudara/i *" + name + "*,\n" +
+      "dengan penuh syukur dan sukacita kami mengundang untuk berkenan hadir pada Ibadah Syukur Baptisan Kudus anak kami, *Freya Clairine Rantetasak*.\n\n" +
       "Undangan dapat dibuka pada link berikut:\n" + link + "\n\n" +
-      "Kehadiran dan doa Bapak/Ibu/Sdr(i) sangat berarti bagi kami. Tuhan Yesus memberkati. 🙏";
+      "Tuhan Yesus memberkati. 🙏";
   }
   function copyText(text, okMsg){
     var status = document.getElementById("status");
